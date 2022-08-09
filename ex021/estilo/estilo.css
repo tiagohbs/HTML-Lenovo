@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{
+    
+    background-color: #c5edd6;
+}
+header{
+    border: 4px solid black;
+    padding: 10px;
+}
+nav{
+    border: 4px solid black;
+    padding: 10px;
+}
+main{
+    background-color: #c5eddf;
+    border: 3px solid black;
+    padding: 5px;
+}
+article{
+    border: 2px solid black;
+    padding: 5px;
+}
+aside{
+    border: 1px solid black;
+    padding: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.lista{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
