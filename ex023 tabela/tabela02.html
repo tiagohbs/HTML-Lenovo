@@ -10,8 +10,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            
+            position: relative; /*Regra para que o cabeçalho/titulo desça com a rolagem da pagina*/
             width: 500px;
+            border-collapse: collapse; /*Espaço entre as linhas da tabela*/
+            
         }
         
         td,th{
@@ -21,16 +23,26 @@
         }
         thead{
             
-            background-color: gray;
+            background-color: rgb(28, 119, 0);
             color: white;
+        }
+        thead > tr > th { /*Regra para que o cabeçalho/titulo desça com a rolagem da pagina*/
+            position: sticky;
+            top:0;
+            background-color: red;
         }
         th{
             border-top-right-radius: 10px;
-            color: red;
+            color: rgb(34, 0, 255);
         }
         tfoot{
-            background-color: gray;
+            background-color: rgb(241, 55, 55);
             color: white;
+        }
+        tbody > tr:nth-child(2n) { /*nth-child(2n) significa que vai pular uma linha e vai aplicar a recgra css abaixo
+            se colocar (odd ou 2n-1) toda linha impar ficar com a regra
+            se colocar (even ou 2n) toda linhar par ficara com a regra*/
+            background-color: gray;
         }
         
     </style>
@@ -40,25 +52,27 @@
     <!--Anatomia para tabelas grandes
     
         table
-            thead cabeça
+        caption
+            thead cabeçalho
                 tr
                 td
-                th
+                th titulo da coluna
             tbody corpo
                 tr
                 td
                 th
             tfoot rodapé
-                tr
-                td
-                th
+                tr linha    
+                td dados da coluna
+                th  titulo
     
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;" >População</th>
             </tr>
         </thead>
         <tbody>
@@ -154,10 +168,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td>99999999999999</td>
             </tr>
         </tfoot>
     </table>
 </body>
-</html>
+</html> 
