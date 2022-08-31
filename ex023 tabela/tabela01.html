@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: separate;
+        }
+        
+        td{
+            border: 1px solid rgb(5, 5, 5);
+            padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: bottom; /*Alinhamento vertical*/
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA TABELAS (SIMPLES)
+
+        TABLE = tabela
+            table row = linha de tabela
+                table header cabeçalho de tabela
+                table data = dado de tabela tag "td" tem fechamento opcional
+    
+
+
+    -->
+    <table> 
+                          <!--Tabela Inicio-->
+        <tr> <!-- Primeira linha-->
+            <td>A1</td> <!--Dado da tabela-->
+            <td>B1</td> <!--Dado da tabela-->
+            <td>C1</td> <!--Dado da tabela-->
+        </tr>
+
+        <tr><!-- Segunda linha-->
+            <td>A2</td> <!--Dado da tabela-->
+            <td>B2</td> <!--Dado da tabela-->
+            <td>C2</td> <!--Dado da tabela-->
+        </tr>
+        <tr class="linha"><!-- Terceira linha-->
+            <td>A3</td> <!--Dado da tabela-->
+            <td>B3</td> <!--Dado da tabela-->
+            <td>C3</td> <!--Dado da tabela-->
+        </tr>
+        <tr><!-- Quarta linha-->
+            <td>A4</td> <!--Dado da tabela-->
+            <td>B4</td> <!--Dado da tabela-->
+            <td class="resul">C4</td> <!--Dado da tabela-->
+        </tr>
+
+    </table>                   <!--Tabela final-->
+</body>
+</html>
